@@ -20,33 +20,33 @@
     </nav>
 
     <main>
-        <section class="contenido">
-            <h1>Contacto</h1>
-            
-            <div class="info-contacto-centro">
-                <h2>Mi información de contacto</h2>
-                
+        <section class="contacto-flex">
+            <div class="info-contacto">
+                <h1>Contacto</h1>
                 <div class="dato-contacto">
                     <h3>Email</h3>
                     <p>johan.mendezobando@ucr.ac.cr</p>
                 </div>
-                
                 <div class="dato-contacto">
                     <h3>Teléfono</h3>
                     <p>(+506) 8323-9175</p>
                 </div>
-                
                 <div class="dato-contacto">
                     <h3>Ubicación</h3>
                     <p>Monteverde, Puntarenas, Costa Rica</p>
                 </div>
-                
                 <div class="dato-contacto">
                     <h3>Universidad</h3>
                     <p>Universidad de Costa Rica<br>Sede Regional del Pacífico</p>
                 </div>
-                
-           
+            </div>
+            <form class="form-contacto" action="mailto:johan.mendezobando@ucr.ac.cr" method="POST" enctype="text/plain">
+                <h2>Envíame un mensaje</h2>
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo" required>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
